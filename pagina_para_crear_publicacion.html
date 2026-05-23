@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForCity</title>
+<link rel="stylesheet" href="estilos_pagina_publicar_noticia.css">
+</head>
+<body>
+<header>
+
+    <div class="logo"><a href="pagina_inicio.html">ForCity</a></div>
+
+    <div class="menu" onclick="abrirMenu()">
+        ☰
+    </div>
+
+</header>
+<div class="sidebar" id="sidebar">
+
+    <h2>Destacados</h2>
+
+    <div class="card"><a href="pagina_noticia.html">Calle rota</a></div>
+    <div class="card"><a href="pagina_noticia.html">Basura</a></div>
+
+    <h2>Novedades</h2>
+
+    <div class="card"><a href="pagina_noticia.html">Luz dañada</a></div>
+    <div class="card"><a href="pagina_noticia.html">Vereda rota</a></div>
+
+    <button class="btn-crear">
+        <a href="pagina_para_crear_publicacion.html">Crear Publicacion</a>
+    </button>
+</div>
+<div class="contenedor">
+    <div class="formulario">
+
+        <input type="text" placeholder="Título">
+
+        <textarea placeholder="Descripción"></textarea>
+
+    </div>
+    <div class="acciones">
+
+        <div class="subir">
+            Añadir Foto
+        </div>
+
+        <button>
+            Publicar
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function abrirMenu(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>

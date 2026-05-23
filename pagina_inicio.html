@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForCity</title>
+<link rel="stylesheet" href="estilos_pagina_principal.css">
+</head>
+<body>
+<header>
+
+    <div class="logo"><a href="pagina_inicio.html">ForCity</a></div>
+
+    <div class="menu" onclick="abrirMenu()">
+        ☰
+    </div>
+
+</header>
+<div class="sidebar" id="sidebar">
+
+    <h2>Destacados</h2>
+
+    <div class="card"><a href="pagina_noticia.html">Calle rota</a></div>
+    <div class="card"><a href="pagina_noticia.html">Basura</a></div>
+
+    <h2>Novedades</h2>
+
+    <div class="card"><a href="pagina_noticia.html">Luz dañada</a></div>
+    <div class="card"><a href="pagina_noticia.html">Vereda rota</a></div>
+    
+    <button class="btn-crear">
+        <a href="pagina_para_crear_publicacion.html">Crear Publicacion</a>
+    </button>
+</div>
+<div class="contenido">
+
+    <a href="pagina_noticia.html">
+        <div class="publicacion">
+            <h2>Bache peligroso en Avenida Central</h2>
+            <p>Vecinos reportan un gran bache en la Avenida Central que provoca
+        accidentes y dificulta la circulación de autos y bicicletas.
+        El problema lleva más de 3 semanas sin solución y aumenta
+        el riesgo durante los días de lluvia.</p>
+        </div>
+    </a>
+    <a href="pagina_noticia.html">
+        <div class="publicacion">
+            <h2>Falta de iluminación en plaza pública</h2>
+            <p>Vecinos reportan que varias luces de la plaza del barrio no funcionan
+                desde hace semanas. Durante la noche la zona queda completamente oscura,
+                generando inseguridad y dificultando el tránsito de personas.
+                También se registraron accidentes por la poca visibilidad.</p>
+        </div>
+    </a>
+
+</div>
+<script>
+
+function abrirMenu(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>

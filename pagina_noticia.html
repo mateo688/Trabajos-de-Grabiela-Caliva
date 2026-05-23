@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForCity</title>
+
+<link rel="stylesheet" href="estilos_pagina_notica.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="pagina_inicio.html">ForCity</a>
+    </div>
+
+    <div class="menu" onclick="abrirMenu()">
+        ☰
+    </div>
+
+</header>
+
+<!-- MENU -->
+
+<div class="sidebar" id="sidebar">
+    
+
+    <h2>Destacados</h2>
+
+    <div class="card">
+        <a href="pagina_noticia.html">Calle rota</a>
+    </div>
+
+    <div class="card">
+        <a href="pagina_noticia.html">Basura</a>
+    </div>
+
+    <h2>Novedades</h2>
+
+    <div class="card">
+        <a href="pagina_noticia.html">Luz dañada</a>
+    </div>
+
+    <div class="card">
+        <a href="pagina_noticia.html">Vereda rota</a>
+    </div>
+
+    <button class="btn-crear">
+        <a href="pagina_para_crear_publicacion.html">Crear Publicacion</a>
+    </button>
+</div>
+
+<div class="contenedor">
+
+    <div class="imagenes">
+
+        <div class="foto">
+            <img class="foto" src="ChatGPT Image 23 may 2026, 03_50_07 p.m..png" alt="">
+        </div>
+
+        <div class="foto">
+            <img class="foto" src="ChatGPT Image 23 may 2026, 03_50_07 p.m..png" alt="">
+        </div>
+
+    </div>
+
+    <div class="descripcion">
+
+        <h2>Descripción</h2>
+
+        <p>
+            Vecinos reportan un gran bache en la Avenida Central que provoca
+            accidentes y dificulta la circulación de autos y bicicletas.
+            El problema lleva más de 3 semanas sin solución y aumenta
+            el riesgo durante los días de lluvia.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function abrirMenu(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
